@@ -1,0 +1,16 @@
+#search-form input,
+.content-box,
+.sf-menu > li > a,
+.button,
+.sidebar,
+#subs-form input, #subs-form a,
+#contact-form input, #contact-form textarea {behavior: url(js/PIE.htc); position:relative;}
+
+#search-form a,
+.sf-menu ul,
+.banner1 span, .banner2 span, .banner3 span, .banner4 span, .banner5 span{behavior: url(js/PIE.htc);}
+
+body{min-width:990px;}
+.content-box{box-shadow:0px -1px 5px #dcdcc6;}
+#search-form{top:-63px;}
+

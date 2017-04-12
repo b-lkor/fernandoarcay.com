@@ -1,0 +1,91 @@
+.sf-menu > li {
+	position:relative;
+	float:left;
+	font-size:20px;
+	line-height:25px;
+}
+	.sf-menu > li > a {
+		display:block;
+		padding:9px 28px 13px;
+		color:#524e4b;
+		text-decoration:none;
+		background:#fff;
+		border-radius:18px 18px 0 0;
+		-moz-border-radius:18px 18px 0 0;
+		-webkit-border-radius:18px 18px 0 0;
+	}
+		.sf-menu > li.sfHover > a,.sf-menu > li > a:hover, .sf-menu > li.current > a {text-decoration:none; color:#fff; background-color:#b0d50f;}
+/***submenu***/
+.sf-menu ul {
+	position:absolute;
+	top:-999em;
+	z-index:99;
+	width:100%; 
+	display:none;
+	padding:20px 0;
+	background:#b0d50f;
+	border-radius:0 0 18px 18px;
+	-moz-border-radius:0 0 18px 18px;
+	-webkit-border-radius:0 0 18px 18px;
+}
+.sf-menu li li{
+	margin-bottom:12px;
+	position:relative;
+	padding:0 20px;
+	font:bold 13px/16px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+}
+	.sf-menu li li a{color:#fff; text-decoration:none;}
+		.sf-menu li li > a:hover,.sf-menu li li.sfHover > a{text-decoration:none; color:#6c7261;}
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	left:0px;
+	top:49px;
+}
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+	top:-999em;
+}
+/***subsubmenu***/
+.sf-menu ul ul{
+	background:#6c7261;
+	border-radius:18px;
+	-moz-border-radius:18px;
+	-webkit-border-radius:18px;
+}
+	.sf-menu ul ul a:hover{color:#b0d50f;}
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+	left:182px;
+	top:-20px;
+}
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul {
+	top:-999em;
+}
+
+/* Design for a width of 768px */
+@media only screen and (max-width: 995px){
+	.sf-menu > li > a {padding:9px 15px 13px;}
+		.sf-menu > li > a .arrow{display:inline-block; width:7px; height:4px; background:url(../images/menu-arrow.gif) center top no-repeat; margin-left:8px; vertical-align:1px;}
+			.sf-menu > li.sfHover > a .arrow,.sf-menu > li > a:hover .arrow, .sf-menu > li.current > a .arrow {background-position:center -10px;}
+	/***subsubmenu***/
+	ul.sf-menu li li:hover ul,
+	ul.sf-menu li li.sfHover ul {left:171px;}
+}
+
+/* Design for a width of 320 and 480px*/
+@media only screen and (max-width: 767px) {
+	nav{padding-bottom:10px;}
+	.sf-menu > li {float:none; margin-bottom:2px;}
+	.sf-menu > li > a {border-radius:0; -moz-border-radius:0; -webkit-border-radius:0; }
+		.sf-menu > li:first-child > a{border-radius:18px 18px 0 0; -moz-border-radius:18px 18px 0 0; -webkit-border-radius:18px 18px 0 0;}
+	/***submenu***/
+	.sf-menu ul {position:static; border-radius:0; -moz-border-radius:0; -webkit-border-radius:0; background:#6c7261;}
+	.sf-menu li li > a:hover,.sf-menu li li.sfHover > a{color:#b0d50f;}
+		.sf-menu li li > a .arrow{display:inline-block; width:7px; height:4px; background:url(../images/menu-arrow2.gif) center top no-repeat; margin-left:8px; vertical-align:2px;}
+			.sf-menu li li.sfHover > a .arrow,.sf-menu li li > a:hover .arrow, .sf-menu li li.current > a .arrow {background-position:center -10px;}
+	/***subsubmenu***/
+	.sf-menu ul ul{border-radius:0; -moz-border-radius:0; -webkit-border-radius:0; padding:20px 0 10px;}
+	.sf-menu ul ul li{text-transform:none;}
+}

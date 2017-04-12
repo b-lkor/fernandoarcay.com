@@ -1,0 +1,161 @@
+﻿<!doctype html-5>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="css/custom-theme/jquery-ui-1.8.21.custom.css " rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/jquery-ui-1.8.21.custom.min.js"></script>
+   
+<script>
+$(document).ready(function() {
+$("#datepicker").datepicker();
+});
+</script>
+
+</head>
+
+<body>
+<form action="/cgi-bin/formmail/formmail.cgi" method="post" name="formmail">
+  <p>
+    <input type="hidden" name="recipient"  id="recipient" value="adelvalle@imagicusa.com">
+    <input name="subject" type="hidden" id="subject" value="I want to make a reservation">
+    
+    <input type="hidden" name="required" id="required" value="Name,Email,Phone,Date,Guests,Event Type,Services" />
+    <input type="hidden" name="redirect" id="redirect" value="http://www.fernandoarcay.com/NEW/contact3.html" />
+    <input type="hidden" name="print_config" id="print_config" value="Name,Email,Phone,Date,Event Type,Services"/>
+    <input type="hidden" name="sort" value="order:Name,Email,Phone,Date,Guests,Event Type,Services,Body" />
+    
+  </p>
+  <table width="600" border="0" align="center">
+    <tr>
+      <td>Name: </td>
+      <td>Email: </td>
+    </tr>
+    <tr>
+      <td width="50%"><input name="Name" type="text" id="Name" size="35"></td>
+      <td width="50%"><input name="Email" type="text" id="Email" size="40"></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="2"><table width="99%" border="0">
+        <tr>
+          <td width="39%">Phone: </td>
+          <td width="35%">Event Date:</td>
+          <td width="26%"><label for="Guests">Number of Guests:</label></td>
+        </tr>
+        <tr>
+          <td><input name="Phone" type="text" id="Phone" size="25"></td>
+          <td><input type="text" name=" Event Date" id="datepicker" /></td>
+          <td><input name="Guests" type="text" id="Guests" size="10"></td>
+        </tr>
+      </table></td>
+    </tr>
+    <tr>
+      <td colspan="2">&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="2">Location:</td>
+    </tr>
+    <tr>
+      <td colspan="2"><input name="Location" type="text" id="Location" size="90"></td>
+    </tr>
+    <tr>
+      <td colspan="2">&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="2"><table width="99%">
+        <tr>
+          <td>Occasion:</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="25%"><label>
+            <input type="radio" name="Event Type" value="Baptism" id="Event_Type_1">
+            Baptism</label></td>
+          <td width="25%"><input type="radio" name="Event Type" value="Bar Mitzva" id="Event_Type_2">
+            Bar Mitzva</td>
+          <td width="25%"><input type="radio" name="Event Type" value="Birthday" id="Event_Type_3">
+            Birthday</td>
+          <td width="25%"><input type="radio" name="Event Type" value="Corporate" id="Event_Type_4">
+            Corporate</td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="Event Type" value="First Communion" id="Event_Type_5">
+            First Communion</td>         
+          <td><input type="radio" name="Event Type" value="New Year" id="Event_Type_6">
+            New Year's</td>
+          <td><input type="radio" name="Event Type" value="Quinces" id="Event_Type_7">
+            Quinces</td>
+          <td><input type="radio" name="Event Type" value="Wedding" id="Event_Type_8">
+            Wedding</td>
+        </tr>
+      </table></td>
+    </tr>
+    <tr>
+      <td height="24">&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="2">Services:</td>
+    </tr>
+    <tr>
+      <td colspan="2"><table width="95%" align="right">
+        <tr>
+          <td width="215"><label>
+            <input type="checkbox" name="Services" value="Bartender" id="Services_0">
+            Bartender</label></td>
+          <td width="201"><input type="checkbox" name="Services" value="Planning" id="Services_4">
+            Event Planning</td>
+          <td width="144"><input type="checkbox" name="Services" value="Hosts" id="Services">
+            Hosts</td>
+        </tr>
+        <tr>
+          <td><label>
+            <input type="checkbox" name="Services" value="Catering" id="Services_1">
+            Catering</label></td>
+          <td><input type="checkbox" name="Services" value="Furniture" id="Services_8">
+            Furniture </td>
+          <td><input type="checkbox" name="Services" value="Music" id="Services">
+            Music</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="Services" value="Chef" id="Services_7">
+            Chef</td>
+          <td><input type="checkbox" name="Services" value="Guestware " id="Services_9">
+            Guestware </td>
+          <td><input type="checkbox" name="Services" value="Servers" id="Services_5">
+            Servers</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="Services" value="Decorations" id="Services_2">
+Decorations</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center">&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="2" align="left">Tell us more about the event</td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center"><textarea name="more" id="more" cols="70" rows="5"></textarea></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center"><input type="submit" name="Send" id="Send" value="Send"></td>
+    </tr>
+  </table>
+  
+</form>
+
+
+</body>
+</html>

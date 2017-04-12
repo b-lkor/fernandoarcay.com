@@ -1,0 +1,204 @@
+
+/******** reserve form *********/
+.reserve_form {
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	border: 1px solid #666;
+	margin-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.reserveTxt {
+	text-align: left;
+	padding-bottom: 50px;
+	}
+.reserveNom, .reserveMail{
+	width:50%;
+	float:left;
+	padding-bottom: 25px;
+}
+.reserveNom input{
+	width:90%;
+}
+.reserveMail input{
+	width:100%;
+}
+.reserveTres {
+	width:32%;
+	float:left;
+	font-size:11pt;
+	padding: 0px 0px 25px 5%;
+}
+.reserveTres2 {
+	width:33%;
+	float:left;
+	font-size:11pt;
+	padding: 0px 0px 25px 5%;
+}
+.reserveTres3 {
+	width:20%;
+	float:left;
+	font-size:11pt;
+	padding: 0px 0px 25px 5%;
+}
+.reserveTres-LastItem {
+	width:95%;
+	float:left;
+	font-size:11pt;
+	padding: 0px 0px 25px 5%;
+}
+.reserveTresPH {
+	width:40%;
+	float:left;
+	padding-bottom: 25px;
+}
+.reserveTresDT {
+	width:35%;
+	float:left;
+	padding-bottom: 25px;
+}
+.reserveTresGS {
+	width:25%;
+	float:left;
+	padding-bottom: 25px;
+}
+.reserveCuatro {
+	width:25%;
+	float:left;
+	font-size:11pt;
+	padding-bottom: 25px;
+}
+.reserveCuatro2 {
+	width:32%;
+	float:left;
+	font-size:11pt;
+	padding-bottom: 25px;
+}
+.reserveCuatro3 {
+	width:18%;
+	float:left;
+	font-size:11pt;
+	padding-bottom: 25px;
+}
+.reserveLoc input, .reserveLoc textarea {
+	text-align: left;
+	width:100%;	
+}
+.reserveScn {
+	text-align: left;
+}
+.reserveTxt input{
+	text-align: left;
+	color:#6c7261;
+	border:1px solid #bbb;
+	padding: 2px 0px 2px 2px;
+	}
+	.submitBtn {
+		padding-bottom: 25px;
+		text-align:center;
+	}
+
+/******** contact form *********/
+
+.contact-form {
+	font-size:11pt;
+	/*font-weight:bold;*/
+	padding-bottom: 20px;
+	text-align: left;
+}	
+
+.contact-form input, .contact-form textarea {
+	width:98%;	
+	border:1px solid #bbb;
+	padding: 2px 0px 2px 2px;
+	/*font: 13px "Trebuchet MS", Arial, Helvetica, sans-serif;*/
+	color:#6c7261;
+}
+.contact-form input:hover, .contact-form textarea {
+	border:1px solid #red;
+	}
+
+
+
+.captcha {
+	font-size:11pt;
+	border:1px solid #bbb;
+	padding: 20px 0px 10px 0px;
+	text-align: center;
+	width:298px;
+	margin:20px 0px 20px 0px;
+}
+.captcha input, .captcha textarea {
+	width:90%;	
+	border:1px solid #bbb;
+	padding: 2px 0px 2px 2px;
+	color:#6c7261;
+	
+}
+
+
+		
+/*	#contact-form textarea {
+		height:238px;
+		overflow:auto;
+		resize:none;
+			}
+			
+/*.buttons-wrapper{text-align:right; position:relative; padding-right:8px;}
+.buttons-wrapper a {cursor:pointer; margin-left:13px; background-color:#777262;}
+	.buttons-wrapper a:first-child{margin-left:0px;}
+	.buttons-wrapper a:hover {background-color:#b0d50f;} */
+
+@media only screen and (max-width: 995px) {
+	
+	/******* Contact form *******
+	#contact-form fieldset {padding:0;}
+	#contact-form .message{min-height:230px;}
+	#contact-form input, #contact-form textarea {width:166px;}
+	#contact-form textarea {height:200px;}
+	.buttons-wrapper{padding-right:5px;}*/
+}
+@media only screen and (max-width: 767px){
+	
+	/***** Reserve form *****/
+.reserve_form {
+	width: 350px;
+}
+.reserveNom, .reserveMail, .reserveTresPH, .reserveTresDT, .reserveTresGS {
+	width:80%;
+	float:none;
+	padding-bottom: 15px;
+}
+.reserveCuatro, .reserveCuatro2, .reserveCuatro3 {
+	width:80%;
+	float:none;
+	font-size:11pt;
+	padding: 0px 0px 15px 5%;
+}
+.reserveTres, .reserveTres2, .reserveTres3, .reserveTres-LastItem {
+	width:80%;
+	float:none;
+	font-size:11pt;
+	padding: 0px 0px 15px 5%;
+}
+
+.reserveTxt input{width:346px;}
+
+	/***** contact form ****
+	#contact-form label {min-height:45px;}*/
+	#contact-form {width:346px;}
+	/*input, #contact-form textarea*/
+}
+@media only screen and (max-width: 479px){
+	/***** contact form *****
+	#contact-form input, #contact-form textarea{width:196px;}
+	/***** reserve form *****/
+	.reserveTxt input{width:196px;}
+.reserve_form {
+	width: 200px; 
+}
+	
+}

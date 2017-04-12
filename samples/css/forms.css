@@ -1,0 +1,162 @@
+/**********Search form**********/
+#search-form{
+	position:absolute;
+	vertical-align:top;
+	width:289px;
+	height:34px;
+	overflow:hidden;
+	top:56px;
+	right:19px;
+}
+	#search-form fieldset {border:none;padding:0;}
+		#search-form label {display:block; position:absolute; top:1px; left:0;}
+		#search-form input{
+			background: url(../images/serch-input-tail.gif) center top repeat #fcfdf9;
+			border:1px solid #e4e5d7;
+			font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+			color:#b6b7a8;
+			margin:0;
+			padding:6px 16px 7px;
+			outline:none;
+			width:213px;
+			border-radius:15px;
+			-moz-border-radius:15px;
+			-webkit-border-radius:15px;
+		}
+	#search-form a{
+		position:absolute;
+		top:0;
+		right:0;
+		display:block;
+		width:34px;
+		height:25px;
+		padding-top:9px;
+		overflow:hidden;
+		background:#b8e300;
+		font:bold 12px Arial, Helvetica, sans-serif;
+		color:#fff;
+		text-align:center;
+		text-decoration:none;
+		cursor:pointer;
+		border-radius:17px;
+		-moz-border-radius:17px;
+		-webkit-border-radius:17px;
+	}
+		#search-form a:hover{background-color:#6f694f; text-decoration:none;}
+
+/**********Subscribe form**********/
+#subs-form{
+	position:relative;
+	vertical-align:top;
+	width:100%;
+}
+	#subs-form fieldset {border:none;padding:0;}
+		#subs-form label {display:block; min-height:34px;}
+		#subs-form input{
+			background:#fff;
+			border:none;
+			font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+			color:#a2a2a2;
+			margin:0;
+			padding:6px 14px;
+			outline:none;
+			width:216px;
+			border-radius:13px;
+			-moz-border-radius:13px;
+			-webkit-border-radius:13px;
+		}
+	#subs-form a{
+		display:inline-block;
+		background: url(../images/subs-button-tail.png) center top repeat;
+		font: normal 13px/16px "Trebuchet MS", Arial, Helvetica, sans-serif;
+		color:#fff;
+		text-decoration:none;
+		padding:7px 22px;
+		cursor:pointer;
+		border-radius:14px;
+		-moz-border-radius:14px;
+		-webkit-border-radius:14px;
+	}
+		#subs-form a:hover{background:#b0d50f; text-decoration:none;}
+
+/******** contact form *********/
+#contact-form {
+	position:relative;
+	vertical-align:top;
+	width:100%;
+	z-index:1;
+}
+	#contact-form fieldset {border:none;padding:0 8px 0 3px; overflow:hidden;}
+			#contact-form label {display:block; min-height:50px; position:relative;}
+			#contact-form .message{min-height:277px;}
+			#contact-form input, #contact-form textarea {
+				padding:6px 16px 7px;
+				margin:0;
+				font: 13px "Trebuchet MS", Arial, Helvetica, sans-serif;
+				color:#a29f87;
+				background: #fefefd;
+				outline:none;
+				border:1px solid #e1e2d2;
+				width:210px;
+				border-radius:15px;
+				-moz-border-radius:15px;
+				-webkit-border-radius:15px;
+			}
+			#contact-form .area .error {float:none;}
+			#contact-form textarea {
+				height:238px;
+				overflow:auto;
+				resize:none;
+			}
+			#contact-form .success {display:none; margin-bottom:20px;}
+			#contact-form .error,
+			#contact-form .empty {
+				color:#f00;
+				font-size:11px;
+				line-height:1.27em;
+				display:none;
+				overflow:hidden;
+				margin-bottom:5px;
+			}
+.buttons-wrapper{text-align:right; position:relative; padding-right:8px;}
+.buttons-wrapper a {cursor:pointer; margin-left:13px; background-color:#777262;}
+	.buttons-wrapper a:first-child{margin-left:0px;}
+	.buttons-wrapper a:hover {background-color:#b0d50f;}
+
+@media only screen and (max-width: 995px) {
+	/**********Search form**********/
+	#search-form{width:240px; top:35px; right:0px;}
+	#search-form input{width:163px;}
+	/********Subscribe form********/
+	#subs-form input{width:200px;}
+	/******* Contact form ********/
+	#contact-form fieldset {padding:0;}
+	#contact-form .message{min-height:230px;}
+	#contact-form input, #contact-form textarea {width:166px;}
+	#contact-form textarea {height:200px;}
+	.buttons-wrapper{padding-right:5px;}
+}
+@media only screen and (max-width: 767px){
+	/**********Search form**********/
+	#search-form{position:relative; top:0; left:0; width:346px;}
+	#search-form input{width:270px;}
+	/********Subscribe form********/
+	#subs-form{height:30px; overflow:hidden;}
+	#subs-form label {min-height:30px; height:auto; position:absolute; top:0; left:0;}
+	#subs-form input{width:216px;}
+	#subs-form a{position:absolute; top:0; left:250px; padding:7px 22px 8px;}
+	/***** contact form *****/
+	#contact-form label {min-height:45px;}
+	#contact-form input, #contact-form textarea{width:346px;}
+}
+@media only screen and (max-width: 479px){
+	/**********Search form**********/
+	#search-form{width:270px;}
+	#search-form input{width:194px;}
+	/********Subscribe form********/
+	#subs-form{height:auto;}
+	#subs-form label {min-height:34px; position: static;}
+	#subs-form a{position:static; padding:7px 22px;}
+	/***** contact form *****/
+	#contact-form input, #contact-form textarea{width:196px;}
+}
